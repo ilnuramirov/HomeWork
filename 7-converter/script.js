@@ -8,7 +8,9 @@ function convertCurrency(amount, fromCurrency, toCurrency) {
     };
     if (exchangeRates[fromCurrency][toCurrency]) {
         return amount * exchangeRates[fromCurrency][toCurrency];
-    } else {
+    } else { if (fromCurrency === toCurrency){
+        return amount;
+    } else
         return null;
     }
 };
