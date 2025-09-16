@@ -1,6 +1,4 @@
-let inputSum = prompt("Введите сумму в :");
-let inputCurrency = prompt("Введите валюту из которой хотите конвертировать (USD, EUR, RUB):");
-let outputCurrency = prompt("Введите валюту в которую хотите конвертировать (USD, EUR, RUB):");
+
 
 function convertCurrency(amount, fromCurrency, toCurrency) {
     const exchangeRates = {
@@ -15,4 +13,4 @@ function convertCurrency(amount, fromCurrency, toCurrency) {
     }
 };
 
-alert(convertCurrency(inputSum, inputCurrency, outputCurrency));
+alert(convertCurrency(1000, "RUB", "USD"));
