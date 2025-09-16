@@ -2,9 +2,9 @@
 
 function convertCurrency(amount, fromCurrency, toCurrency) {
     const exchangeRates = {
-        USD: { EUR: 0.85, RUB: 74.57 },
-        EUR: { USD: 1.18, RUB: 87.56 },
-        RUB: { USD: 0.013, EUR: 0.011 }
+        $: { EUR: 0.85, руб: 74.57 },
+        EUR: { $: 1.18, руб: 87.56 },
+        руб: { $: 0.013, EUR: 0.011 }
     };
     if (exchangeRates[fromCurrency][toCurrency]) {
         return amount * exchangeRates[fromCurrency][toCurrency];
@@ -13,4 +13,4 @@ function convertCurrency(amount, fromCurrency, toCurrency) {
     }
 };
 
-alert(convertCurrency(1000, "RUB", "USD"));
+alert(convertCurrency(1000, "руб", "$"));
