@@ -1,14 +1,14 @@
-let switchLanguage = prompt("Choose a language: en. English ru. Russian ara. Arabic");
+let switchLanguage = prompt("Choose a language: en. English ru. Russian de. German");
 switch (switchLanguage) {
     case "en":
-        alert("You have selected English.");
+        console.log("You have selected English.");
         break;
     case "ru":
-        alert("Вы выбрали русский.");
+        console.log("Вы выбрали русский.");
         break;
-    case "ara":
-        alert("لقد اخترت العربية.");
+    case "de":
+        console.log("Sie haben Deutsch ausgewählt.");
         break;
     default:
-        alert("Language not supported.");
+        console.log("Language not supported.");
 }
