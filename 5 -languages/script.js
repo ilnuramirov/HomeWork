@@ -7,7 +7,7 @@ switch (switchLanguage) {
         console.log("Вы выбрали русский.");
         break;
     case "de":
-        console.log("Sie haben Deutsch ausgewählt.");
+        console.log("Guten Tag");
         break;
     default:
         console.log("Language not supported.");
