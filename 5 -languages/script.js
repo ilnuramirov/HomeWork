@@ -1,13 +1,13 @@
 let switchLanguage = prompt("Choose a language: en. English ru. Russian de. German");
 switch (switchLanguage) {
     case "en":
-        console.log("You have selected English.");
+        console.log("Hello!");
         break;
     case "ru":
-        console.log("Вы выбрали русский.");
+        console.log("Привет!");
         break;
     case "de":
-        console.log("Guten Tag");
+        console.log("Guten Tag!");
         break;
     default:
         console.log("Language not supported.");
