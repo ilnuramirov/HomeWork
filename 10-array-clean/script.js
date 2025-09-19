@@ -1,16 +1,11 @@
 function cleanArray(arr, functionCallback) {
-    return functionCallback(arr);
+    const result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!functionCallback(arr[i])) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
 }
 
-console.log(cleanArray([1, 2, 3, 4, 5], function(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]  > 3) {
-            arr.splice(i, 1);
-            return  true;
-        } else {
-            return false;
-        }
-        
-    }
-    return arr;
-})); 
+console.log(cleanArray([3, 6, 9, 2], num => num > 3));
