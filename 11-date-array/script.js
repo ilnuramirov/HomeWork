@@ -15,8 +15,7 @@ let trueFormattedDates = dates.filter(function(date) {
   if (dateParts.includes('-')) {
     arrDate = dateParts.split('-');
   } else if (dateParts.includes('/')) {
-    arrDateTemp = dateParts.split('/');
-    arrDate = [arrDateTemp[1], arrDateTemp[0], arrDateTemp[2]];
+    arrDate = dateParts.split('/');
   }
   return arrDate;
 });
