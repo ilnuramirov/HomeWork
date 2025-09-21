@@ -30,7 +30,7 @@ for (let i = 0; i < trueFormattedDates.length; i++) {
   if (day > 0 && day < 32 && month > 0 && month < 13 && year > 0) {
     const dayStr = String(day).padStart(2, '0');
         const monthStr = String(month).padStart(2, '0');
-    validDates.push(`${dayStr}.${monthStr}.${year}`);
+    validDates.push(`${dayStr}-${monthStr}-${year}`);
   }
 }
 
