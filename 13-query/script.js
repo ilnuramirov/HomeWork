@@ -4,6 +4,11 @@ let query = {
 }
 
 function executeQuery(query) {
-    return `search=${query.search}&take=${query.take}`;
+    let temp = '';
+    for (const key in query) {
+        temp += `${key}=${query[key]}&`;
+    }
+    return temp.slice(0, -1);
 }
 
+console.log(executeQuery(query));
